@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav"
+    "sec2 sec2 sec2 main main main main main"
+    "sec2 sec2 sec2 main main main  main main"
+    "sec3 sec3 sec3 main main main  main main"
+    "sec3 sec3 sec3 main main main  main main"
+    "sec3 sec3 sec3 main main main  main main"
+    "sec3 sec3 sec3 extra extra extra extra extra"
+    "sec3 sec3 sec3 extra extra extra extra extra"
+    "sec3 sec3 sec3 extra extra extra extra extra"
+    "sec3 sec3 sec3 extra extra extra extra extra"
+    "reimg reimg reimg reimg reimg repost repost repost"
+    "footer footer footer footer footer footer footer footer ";
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #66ff66;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.section2 {
+  grid-area: sec2;
+  background-color: #d8cce4;
+  padding: 50px;
+}
+
+.main-content {
+  grid-area: main;
+  background-color: #b2945e;
+  color: white;
+  padding: 100px;
+}
+
+.section3 {
+  grid-area: sec3;
+  background-color: #4f5b2c;
+  color: white;
+  padding: 75px;
+}
+
+.extra-content {
+  grid-area: extra;
+  background-color: #a3af8b;
+  padding: 50px;
+}
+
+.related-images {
+  grid-area: reimg;
+  background-color: #338dbc;
+  color: white;
+  padding: 50px;
+}
+
+.related-posts {
+  grid-area: repost;
+  background-color: #c04c75;
+  color: white;
+  padding: 50px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #0000ff;
+  color: white;
+  padding: 50px;
+}
